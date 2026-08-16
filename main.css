@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-Primary: #5E3BEE;
+    --color-Dark: #282938;
+    --color-Pink: #E62872;
+    --color-Navy: #1C1E53;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+.container {
+    width: 100%;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 85.33px;
+
+}
+
+/* زيادة القيمة السالبة لتتغلب على الفراغ الشفاف داخل الـ SVG */
+header .icon img {
+    margin-right: -25px !important;
+    margin-left: 0 !important;
+}
+
+/* إعادة توازن النص بعد سحب الصور */
+header .icon div {
+    margin-left: 55px !important;
+    display: inline-block;
+}
+
+
+header .icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-Dark);
+    font-size: 18px;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+header {
+    background-color: #FFFFFF;
+
+    height: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header .menu ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 42.67px;
+}
+
+header .menu ul li a:hover {
+    color: var(--color-Primary);
+}
+
+.btn {
+    display: inline-block;
+    color: var(--color-Primary);
+    border: 1.3px solid var(--color-Primary);
+    padding: 10px 24px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+
+    background-color: var(--color-Primary);
+    color: #FFFFFF;
+
+}
+
+span {
+    color: var(--color-Primary);
+}
+
+.hero-section {
+    background-color: #F5FCFF;
+    padding: 133px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .item {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 85.33px;
+
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-section .item img {
+    max-width: 45%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero-content div:first-child {
+    font-size: 20px;
+    font-weight: 600px;
+    color: var(--color-Dark);
+    margin-bottom: 21px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    font-weight: 700px;
+    line-height: 1.3;
+    color: var(--color-Dark);
+    margin: 0 0 32px 0;
+}
+
+.hero-content h2 span {
+    color: var(--color-Primary);
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: var(--color-Primary);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400px;
+    font-size: 16px;
+    margin-top: 32px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-hero:hover {
+    cursor: pointer;
+    background-color: var(--color-Navy);
+}
+
+.skills-section {
+    background-color: #FFFFFF;
+    padding: 149.33px 85.33px;
+
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 106.67px;
+
+}
+
+.skill-card {
+    background-color: #F5FCFF;
+    width: 23%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 4px solid var(--color-Primary);
+    transition: all 0.3s ease;
+    padding: 32px;
+
+}
+
+.skills-grid {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 42px;
+
+
+    text-align: left;
+
+}
+
+.skill-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-Dark);
+    margin: 0 0 32px 0;
+
+
+
+    text-align: left;
+}
+
+.skill-card .card-icon {
+    margin-bottom: 32px;
+}
+
+h3 {
+    white-space: nowrap;
+}
+
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 133px 85px;
+    gap: 114px;
+    box-sizing: border-box;
+
+}
+
+
+.j {
+    width: 450.67px;
+
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list p {
+    margin-bottom: 24px;
+    font-size: 24px;
+
+}
+
+.e {
+    margin-bottom: 90px;
+}
+
+.portfolio-section {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 85px;
+    box-sizing: border-box;
+}
+
+.portfolio-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.project-card {
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    height: auto;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    cursor: pointer;
+
+}
+
+.card-image {
+    height: 400px;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-purple {
+    background-color: #9A94FF;
+}
+
+.bg-light-purple {
+    background-color: #E2DFFF;
+}
+
+.bg-gray {
+    background-color: #E5E5E5;
+}
+
+.card-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.cas {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cas h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+
+.cas p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    margin: 0;
+}
+
+.cas a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    border-bottom: 2px solid var(--color-Primary);
+    padding-bottom: 10px;
+
+}
+
+.btn-pink-dribbble {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--color-Pink);
+    padding: 16px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.testimonials-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 133px 85px;
+    background-color: #F5FCFF;
+    box-sizing: border-box;
+}
+
+.testimonials-header {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin-bottom: 80px;
+}
+
+.testimonials-header small {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-Dark);
+}
+
+.testimonials-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-Dark);
+    margin: 0;
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 42px;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.testimonial-card {
+    flex: 1;
+    background-color: #F5FCFF;
+    border: 1.3px solid #006B61;
+    border-radius: 8px;
+    padding: 42px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    transition: all 0.3S ease;
+}
+
+.testimonial-card .stars {
+    color: #006B61;
+    font-size: 20px;
+    display: flex;
+    gap: 6px;
+}
+
+.testimonial-card .feedback-text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-Dark);
+    margin: 0;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.client-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.client-details h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-Dark);
+    margin: 0;
+}
+
+.client-details small {
+    font-size: 16px;
+    color: #555555;
+}
+
+.testimonial-card {
+    border-radius: 20px;
+}
+
+.client-avatar {
+    border-radius: 20px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-20PX);
+    cursor: pointer;
+}
+
+.contact-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 149px 85px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contact-header {
+    margin-bottom: 60px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #282938;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 16px;
+    border: 1.3px solid #5E3BEE;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group textarea {
+    height: 140px;
+    resize: none;
+}
+
+.form-submit {
+    grid-column: span 2;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.form-submit button {
+    background-color: var(--color-Primary);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 0;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.form-submit button:hover {
+    background-color: var(--color-Navy);
+}
+
+.main-footer {
+    max-width: 1920px;
+    width: 100%;
+    height: auto;
+    background-color: #F5FCFF;
+    padding: 106.67px 85.33px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 106.67px;
+
+    box-sizing: border-box;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.footer-logo-shapes img {
+    margin-right: -25px !important;
+    margin-left: 0 !important;
+}
+
+.footer-logo-text {
+    margin-left: 55px !important;
+    font-size: 24px;
+    font-weight: 700;
+    color: #282938;
+}
+
+
+.footer-nav ul {
+    display: flex;
+    gap: 42.67px;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #282938;
+    font-size: 18px;
+}
+
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-socials a {
+    color: #282938;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #D9D9D9;
+    width: 100%;
+    margin: 0;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-bottom .copyright {
+    font-size: 16px;
+    color: #282938;
+    margin: 0;
+}
+
+.privacy-links {
+    display: flex;
+    gap: 32px;
+}
+
+.privacy-links a {
+    font-size: 16px;
+    color: #282938;
+    text-decoration: none;
+}
+
+
+.footer-logo-shapes {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+
+
+
+
+
+
+.footer-socials a {
+    display: inline-block;
+    color: #282938;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+    color: var(--color-Primary);
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   أكواد التجاوب الشاملة لجميع الشاشات
+   ========================================================================== */
+
+/* 1. للأجهزة اللوحية والشاشات المتوسطة (أقل من 1024 بكسل) */
+@media screen and (max-width: 1024px) {
+
+    /* تقليص الحواف الجانبية الكبيرة لعدم ضغط المحتوى */
+    .container,
+    .hero-section .item,
+    .skills-section,
+    .item,
+    .portfolio-section,
+    .testimonials-section,
+    .main-footer {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    /* شبكة المهارات: كرتين في الصف بدلاً من 4 */
+    .skills-grid {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .skill-card {
+        width: 48%;
+    }
+
+    /* شبكة التقييمات ومعرض الأعمال */
+    .testimonials-grid,
+    .portfolio-grid {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+/* 2. لشاشات الهواتف الذكية بجميع أحجامها (أقل من 768 بكسل) */
+@media screen and (max-width: 768px) {
+
+    /* بادينج مرن ومناسب للشاشات الصغيرة */
+    .container,
+    .hero-section .item,
+    .skills-section,
+    .item,
+    .portfolio-section,
+    .testimonials-section,
+    .main-footer {
+        padding: 60px 20px !important;
+    }
+
+    /* الهيدر: ترتيب اللوجو والمنيو والزر تحت بعض */
+    header {
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .menu ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* قسم الهيرو الرئيسي: النص تحت والصورة فوق */
+    .hero-section .item {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-section .item img {
+        max-width: 90%;
+    }
+
+    /* قسم About Me: ترتيب عمودي وتوسيط */
+    .item {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .j {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .list p {
+        font-size: 18px;
+    }
+
+    /* قسم المهارات والكروت: كرت واحد يفرش الشاشة كاملة */
+    .skill-card,
+    .project-card,
+    .testimonial-card {
+        width: 100% !important;
+        flex: none !important;
+        max-width: 100% !important;
+    }
+
+    /* هيدر معرض الأعمال */
+    .portfolio-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* اتجاه شبكات الكروت لعمودي */
+    .portfolio-grid,
+    .testimonials-grid {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    /* فورم الاتصال (Contact Form): تحويل الـ Grid لعمود واحد كامل */
+    .contact-form {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .full-width,
+    .form-submit {
+        grid-column: span 1 !important;
+    }
+
+    /* الفوتر: ترتيب عمودي وتوسيط كامل لجميع العناصر */
+    .main-footer {
+        gap: 40px;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column !important;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-nav ul,
+    .privacy-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+}
